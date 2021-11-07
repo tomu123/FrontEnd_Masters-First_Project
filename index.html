@@ -7,12 +7,6 @@
 			href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Mulish:wght@900&display=swap"
-			rel="stylesheet"
-		/>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,11 +14,11 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<div class="newspaper_div">
+		<section class="newspaper">
 			<h1 class="newspaper_title">The News Times</h1>
 			<div class="newspage_div">
 				<div class="news_row_div">
-					<div class="news_div">
+					<article class="news_article">
 						<h2 class="news_title">Students Learn HTML</h2>
 						<p class="news_p">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
@@ -42,8 +36,8 @@
 							posuere sed lacus ac, condimentum feugiat dolor. Etiam venenatis
 							blandit cursus. Sed bibendum non ex at semper.
 						</p>
-					</div>
-					<div class="news_div central">
+					</article>
+					<article class="news_article central">
 						<h2 class="news_title">BREAKING: Puppies Are Adorable</h2>
 						<img src="http://placecorgi.com/500/300" alt="dog image" />
 						<p class="news_p">
@@ -56,8 +50,8 @@
 							pellentesque. Aliquam in aliquam urna, ac lacinia metus. Donec ut
 							odio nec sapien maximus posuere.
 						</p>
-					</div>
-					<div class="news_div">
+					</article>
+					<article class="news_article">
 						<h2 class="news_title">CSS Is Apparently a Thing</h2>
 						<p class="news_p">
 							Aliquam magna orci, lacinia non ultrices sed, ultricies nec magna.
@@ -76,10 +70,10 @@
 							viverra tincidunt, dolor ipsum maximus enim, nec mollis augue
 							lacus vel nulla.
 						</p>
-					</div>
+					</article>
 				</div>
 				<div class="news_row_div">
-					<div class="news_div">
+					<article class="news_article">
 						<h2 class="news_title">Boy Likes Turtles</h2>
 						<p class="news_p">
 							Pellentesque in ultrices augue, et sagittis lorem. Praesent
@@ -97,16 +91,24 @@
 							interdum velit facilisis, egestas neque congue, vehicula tortor.
 							Maecenas nec justo augue.
 						</p>
-					</div>
-					<div class="news_div span">
-						<div class="politics section_span">Politics</div>
-						<div class="tech section_span">Technology</div>
-						<div class="local section_span">Local</div>
-						<div class="opinion section_span">Opinion</div>
-						<div class="sports section_span">Sports</div>
-					</div>
+					</article>
+					<nav class="sections_nav">
+						<ul class="section_link_list">
+							<li class="politics">
+								<a class="section_link" href="">Politics</a>
+							</li>
+							<li class="tech">
+								<a class="section_link" href="">Technology</a>
+							</li>
+							<li class="local"><a class="section_link" href="">Local</a></li>
+							<li class="opinion">
+								<a class="section_link" href="">Opinion</a>
+							</li>
+							<li class="sports"><a class="section_link" href="">Sports</a></li>
+						</ul>
+					</nav>
 				</div>
 			</div>
-		</div>
+		</section>
 	</body>
 </html>
